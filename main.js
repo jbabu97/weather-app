@@ -13,7 +13,7 @@ document.getElementById('search_city').addEventListener('keypress', (event) => {
 const getWeatherInfo = () => {
     const searchCity = document.getElementById('search_city').value;
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=91b808bebc9277d11412840060c70169`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=91b808bebc9277d11412840060c70169`)
     .then(res => res.json())
     .then(data => {
         console.log(data);
